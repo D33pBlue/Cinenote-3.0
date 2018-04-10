@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_cinenote</class>
+ <widget class="QMainWindow" name="main_cinenote">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>main_cinenote</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFilm">
+    <property name="title">
+     <string>Film</string>
+    </property>
+    <widget class="QMenu" name="menuTrova">
+     <property name="title">
+      <string>Trova</string>
+     </property>
+     <addaction name="actionRegista"/>
+     <addaction name="actionFilm"/>
+     <addaction name="actionGenere"/>
+    </widget>
+    <widget class="QMenu" name="menuClassifiche">
+     <property name="title">
+      <string>Classifiche</string>
+     </property>
+     <addaction name="actionFilm_2"/>
+     <addaction name="actionRegisti"/>
+     <addaction name="actionGeneri"/>
+    </widget>
+    <addaction name="actionHome"/>
+    <addaction name="actionVisti"/>
+    <addaction name="actionAttesi"/>
+    <addaction name="actionNuovo_2"/>
+    <addaction name="menuClassifiche"/>
+    <addaction name="actionCronologia"/>
+    <addaction name="menuTrova"/>
+    <addaction name="actionCover"/>
+   </widget>
+   <widget class="QMenu" name="menuSerie">
+    <property name="title">
+     <string>Serie</string>
+    </property>
+    <addaction name="actionHomeSerie"/>
+    <addaction name="actionViste"/>
+    <addaction name="actionAttese_serie"/>
+    <addaction name="actionNuovaSerie"/>
+    <addaction name="actionCronologia_Serie"/>
+    <addaction name="actionTrova_serie"/>
+    <addaction name="actionTestuale_Serie"/>
+   </widget>
+   <widget class="QMenu" name="menuLibri">
+    <property name="title">
+     <string>Libri</string>
+    </property>
+    <widget class="QMenu" name="menuTrova_2">
+     <property name="title">
+      <string>Trova</string>
+     </property>
+     <addaction name="actionLibro"/>
+     <addaction name="actionAutore"/>
+    </widget>
+    <addaction name="actionHome_Libri"/>
+    <addaction name="actionLetti_Libri"/>
+    <addaction name="actionAttesi_Libri"/>
+    <addaction name="actionNuovo_Libro"/>
+    <addaction name="actionCronologia_Libri"/>
+    <addaction name="menuTrova_2"/>
+    <addaction name="actionTestuale_Libri"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionRoot"/>
+   </widget>
+   <addaction name="menuFilm"/>
+   <addaction name="menuSerie"/>
+   <addaction name="menuLibri"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <action name="actionRoot">
+   <property name="text">
+    <string>Root</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionNuovo">
+   <property name="text">
+    <string>Nuovo</string>
+   </property>
+  </action>
+  <action name="actionVisto">
+   <property name="text">
+    <string>Visto</string>
+   </property>
+  </action>
+  <action name="actionVisti">
+   <property name="text">
+    <string>Visti</string>
+   </property>
+  </action>
+  <action name="actionAttesi">
+   <property name="text">
+    <string>Attesi</string>
+   </property>
+  </action>
+  <action name="actionCronologia">
+   <property name="text">
+    <string>Cronologia</string>
+   </property>
+  </action>
+  <action name="actionRegista">
+   <property name="text">
+    <string>Regista</string>
+   </property>
+  </action>
+  <action name="actionFilm">
+   <property name="text">
+    <string>Film</string>
+   </property>
+  </action>
+  <action name="actionGenere">
+   <property name="text">
+    <string>Genere</string>
+   </property>
+  </action>
+  <action name="actionFilm_2">
+   <property name="text">
+    <string>Film</string>
+   </property>
+  </action>
+  <action name="actionRegisti">
+   <property name="text">
+    <string>Registi</string>
+   </property>
+  </action>
+  <action name="actionGeneri">
+   <property name="text">
+    <string>Generi</string>
+   </property>
+  </action>
+  <action name="actionNuovo_2">
+   <property name="text">
+    <string>Nuovo</string>
+   </property>
+  </action>
+  <action name="actionCover">
+   <property name="text">
+    <string>Cover</string>
+   </property>
+  </action>
+  <action name="actionHomeSerie">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionNuovaSerie">
+   <property name="text">
+    <string>Nuova</string>
+   </property>
+  </action>
+  <action name="actionHome_Libri">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionViste">
+   <property name="text">
+    <string>Viste</string>
+   </property>
+  </action>
+  <action name="actionAttese_serie">
+   <property name="text">
+    <string>Attese</string>
+   </property>
+  </action>
+  <action name="actionCronologia_Serie">
+   <property name="text">
+    <string>Cronologia</string>
+   </property>
+  </action>
+  <action name="actionTrova_serie">
+   <property name="text">
+    <string>Trova serie</string>
+   </property>
+  </action>
+  <action name="actionLetti_Libri">
+   <property name="text">
+    <string>Letti</string>
+   </property>
+  </action>
+  <action name="actionAttesi_Libri">
+   <property name="text">
+    <string>Attesi</string>
+   </property>
+  </action>
+  <action name="actionNuovo_Libro">
+   <property name="text">
+    <string>Nuovo</string>
+   </property>
+  </action>
+  <action name="actionCronologia_Libri">
+   <property name="text">
+    <string>Cronologia</string>
+   </property>
+  </action>
+  <action name="actionLibro">
+   <property name="text">
+    <string>Libro</string>
+   </property>
+  </action>
+  <action name="actionAutore">
+   <property name="text">
+    <string>Autore</string>
+   </property>
+  </action>
+  <action name="actionGenere_Libro">
+   <property name="text">
+    <string>Genere</string>
+   </property>
+  </action>
+  <action name="actionTestuale_Serie">
+   <property name="text">
+    <string>Testuale</string>
+   </property>
+  </action>
+  <action name="actionTestuale_Libri">
+   <property name="text">
+    <string>Testuale</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_vista_serie</class>
+ <widget class="QDialog" name="Dialog_vista_serie">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>443</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>421</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Visione Stagione</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>49</y>
+     <width>421</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Data inizio</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Note</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Voto</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Modo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Data fine*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Stagione</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="stagione"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDateEdit" name="inizio"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="modo"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="voto"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QTextEdit" name="note"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="fine"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="annulla">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>310</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Annulla</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="salva">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>310</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>219</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>* data fine yyyy-mm-dd solo se nota</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>stagione</tabstop>
+  <tabstop>inizio</tabstop>
+  <tabstop>fine</tabstop>
+  <tabstop>modo</tabstop>
+  <tabstop>voto</tabstop>
+  <tabstop>note</tabstop>
+  <tabstop>salva</tabstop>
+  <tabstop>annulla</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

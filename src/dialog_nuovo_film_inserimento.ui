@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_nuovo_film_inserimento</class>
+ <widget class="QDialog" name="Dialog_nuovo_film_inserimento">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QToolBox" name="toolBox">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="info">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>595</width>
+        <height>336</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Informazioni</string>
+      </attribute>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>571</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Aspettativa:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_titolo">
+          <property name="text">
+           <string>Titolo:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="titolo"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Anno:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="anno"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QRadioButton" name="disponibile">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="aspettativa"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Disponibile:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Descrizione:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QTextEdit" name="descrizione"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Consigliato da:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="consigliatoda"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="regista">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>595</width>
+        <height>336</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Regista</string>
+      </attribute>
+      <widget class="QPushButton" name="reset_registi">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>220</y>
+         <width>80</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="splitter_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>291</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLineEdit" name="nuovo_regista"/>
+       <widget class="QPushButton" name="aggiungi_regista">
+        <property name="text">
+         <string>Aggiungi</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>491</width>
+         <height>192</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Attuali:</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="elenco_registi"/>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="genere">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>595</width>
+        <height>336</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Genere</string>
+      </attribute>
+      <widget class="QSplitter" name="splitter_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>291</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLineEdit" name="nuovo_genere"/>
+       <widget class="QPushButton" name="aggiungi_genere">
+        <property name="text">
+         <string>Aggiungi</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>491</width>
+         <height>192</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Attuali:</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="elenco_generi"/>
+      </widget>
+      <widget class="QPushButton" name="reset_generi">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>220</y>
+         <width>80</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="conferma">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>595</width>
+        <height>336</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Conferma</string>
+      </attribute>
+      <widget class="QPushButton" name="back">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>230</y>
+         <width>80</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="salva">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>230</y>
+         <width>80</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Salva</string>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="splitter_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>6</y>
+         <width>561</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Riepilogo:</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="riepilogo"/>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>titolo</tabstop>
+  <tabstop>anno</tabstop>
+  <tabstop>aspettativa</tabstop>
+  <tabstop>disponibile</tabstop>
+  <tabstop>descrizione</tabstop>
+  <tabstop>consigliatoda</tabstop>
+  <tabstop>reset_registi</tabstop>
+  <tabstop>nuovo_regista</tabstop>
+  <tabstop>aggiungi_regista</tabstop>
+  <tabstop>elenco_registi</tabstop>
+  <tabstop>nuovo_genere</tabstop>
+  <tabstop>aggiungi_genere</tabstop>
+  <tabstop>elenco_generi</tabstop>
+  <tabstop>reset_generi</tabstop>
+  <tabstop>back</tabstop>
+  <tabstop>salva</tabstop>
+  <tabstop>riepilogo</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
