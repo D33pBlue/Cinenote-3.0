@@ -15,7 +15,7 @@ Once you've stored information about your movies you can navigate through the li
 ..and if you click on one you can open an info dialog with all information. The same for the director if you click over his name.
 
 ![alt text](demo/hit.png?raw=true "Hit")
-There is also a top movies hit
+There are also a top movies and top directors rating tables
 
 ![alt text](demo/chrono.png?raw=true "Chrono")
 and a calendar with the possibility to view what you've seen in a specific period of time. More features are available, just compile and try the application.
